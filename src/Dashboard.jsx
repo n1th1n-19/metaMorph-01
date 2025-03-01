@@ -47,7 +47,7 @@ export default function DashboardLayoutBasic(props) {
 
   return (
     <Router>
-      <AppProvider navigation={NAVIGATION} router={router} theme={demoTheme} window={demoWindow}>
+      <AppProvider navigation={NAVIGATION} router={router} theme={demoTheme} window={demoWindow} branding={{ title: 'MetaMorph' }}>
         <DashboardLayout>
           <PageContainer>
             <Routes>
