@@ -7,6 +7,11 @@ import { PageContainer } from '@toolpad/core/PageContainer';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { FaQrcode, FaFilePdf, FaMicrophone, FaFileAlt, FaTools } from "react-icons/fa";
 import DashboardHome from './Components/DashboardHome';
+import OCR from './Components/OCR';
+import QRCode from './Components/QRCode';
+import FileConverter from './Components/FileConverter';
+import SpeechToText from './Components/SpeechToText';
+import Settings from './Components/Settings';
 
 const NAVIGATION = [
   { kind: 'header', title: 'Main Items' },
@@ -33,12 +38,6 @@ function useDemoRouter(initialPath) {
   }, [pathname]);
   return router;
 }
-
-const OCR = () => <div className="content"><h2>OCR Tool</h2></div>;
-const QRCode = () => <div className="content"><h2>QR Code Generator</h2></div>;
-const FileConverter = () => <div className="content"><h2>File Converter</h2></div>;
-const SpeechToText = () => <div className="content"><h2>Speech to Text</h2></div>;
-const Settings = () => <div className="content"><h2>Settings</h2></div>;
 
 export default function DashboardLayoutBasic(props) {
   const { window } = props;
